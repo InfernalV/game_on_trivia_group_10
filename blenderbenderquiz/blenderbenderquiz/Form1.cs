@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace blenderbenderquiz
 {
-    public partial class Form1 : Form
+    public partial class BlenderBenderQuizz : Form
     {
-        public Form1()
+        public BlenderBenderQuizz()
         {
             InitializeComponent();
         }

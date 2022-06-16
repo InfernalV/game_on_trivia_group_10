@@ -1,0 +1,11 @@
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\bin\Debug\blenderbenderquiz.exe.config
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\bin\Debug\blenderbenderquiz.exe
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\bin\Debug\blenderbenderquiz.pdb
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.csproj.AssemblyReference.cache
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.csproj.SuggestedBindingRedirects.cache
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.Form1.resources
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.Properties.Resources.resources
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.csproj.GenerateResource.cache
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.csproj.CoreCompileInputs.cache
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.exe
+C:\Users\stijn\Source\Repos\game_on_trivia_group_10\blenderbenderquiz\blenderbenderquiz\obj\Debug\blenderbenderquiz.pdb
