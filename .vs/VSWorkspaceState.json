@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\blenderbenderquiz",
+    "\\blenderbenderquiz\\blenderbenderquiz",
+    "\\blenderbenderquiz\\blenderbenderquiz\\Properties"
   ],
-  "SelectedNode": "\\blenderbenderquiz.sln",
+  "SelectedNode": "\\blenderbenderquiz\\blenderbenderquiz\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
