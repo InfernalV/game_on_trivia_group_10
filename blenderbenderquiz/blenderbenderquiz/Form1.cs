@@ -36,10 +36,11 @@ namespace blenderbenderquiz
         {
 
         }
+        
+
 
         private int _ticks;
-        private int _count;
-
+        private int _count = 1;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -57,7 +58,7 @@ namespace blenderbenderquiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (_correct= C)
+            if (C = correct)
             {
                 _count++;
             }
@@ -65,7 +66,7 @@ namespace blenderbenderquiz
 
         private void A_Click(object sender, EventArgs e)
         {
-            if (_correct = A)
+            if (A = correct)
             {
                 _count++;
             }
@@ -73,7 +74,7 @@ namespace blenderbenderquiz
 
         private void B_Click(object sender, EventArgs e)
         {
-            if (_correct = B)
+            if (B = correct)
             {
                 _count++;
             }
