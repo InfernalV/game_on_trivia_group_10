@@ -7,14 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
+namespace MySqlLite
+{
+      class DataClass
+      {
+        private SQLiteConnection sqlite;
 
+        public DataClass()
+        {
+              sqlite = new SQLiteConnection("Data Source=/C:/Users/stijn/source/repos/game_on_trivia_group_10/blenderbenderquiz/blenderbenderquiz/basis.db");
+
+        }
+
+        public DataTable selectQuery(string query)
+        {
+              SQLiteDataAdapter ad;
+              DataTable dt = new DataTable();
+
+              try
+              {
+                    SQLiteCommand cmd;
+                    sqlite.Open();  
+                    cmd = sqlite.CreateCommand();
+                    cmd.CommandText = query;  
+                    ad = new SQLiteDataAdapter(cmd);
+                    ad.Fill(dt);
+              }
+              catch(SQLiteException ex)
+              {
+                   
+              }
+              sqlite.Close();
+              return dt;
+  }
+}
 namespace blenderbenderquiz
 {
     public partial class BlenderBenderQuizz : Form
     {
-        private List<Circle> circles = new List<Circle>();
-
-
 
         public BlenderBenderQuizz()
         {
@@ -40,17 +71,17 @@ namespace blenderbenderquiz
 
 
         private int _ticks;
-        private int _count = 1;
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             _ticks++;
             label5.Text = _ticks.ToString();
 
-            if(_ticks == 30)
+            if(_ticks == 45)
             {
                 var form = new Form2();
-                form.SetScore(_Count);
+                form.SetScore(_count);
                 Hide();
                 form.Show();
             }
@@ -78,6 +109,11 @@ namespace blenderbenderquiz
             {
                 _count++;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

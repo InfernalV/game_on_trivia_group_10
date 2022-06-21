@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\blenderbenderquiz",
-    "\\blenderbenderquiz\\.vs",
-    "\\blenderbenderquiz\\.vs\\blenderbenderquiz",
-    "\\blenderbenderquiz\\blenderbenderquiz",
-    "\\blenderbenderquiz\\blenderbenderquiz\\bin",
-    "\\blenderbenderquiz\\blenderbenderquiz\\obj",
-    "\\blenderbenderquiz\\blenderbenderquiz\\obj\\Debug",
-    "\\blenderbenderquiz\\blenderbenderquiz\\obj\\Debug\\TempPE",
-    "\\blenderbenderquiz\\blenderbenderquiz\\Properties"
+    "\\blenderbenderquiz\\blenderbenderquiz"
   ],
-  "SelectedNode": "\\blenderbenderquiz",
+  "SelectedNode": "\\blenderbenderquiz\\blenderbenderquiz\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
