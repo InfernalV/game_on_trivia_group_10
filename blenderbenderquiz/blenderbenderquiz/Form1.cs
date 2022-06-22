@@ -8,54 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
-namespace MySqlLite
-{
-      class DataClass
-      {
-        private SQLiteConnection sqlite;
 
-        public DataClass()
-        {
-              sqlite = new SQLiteConnection("Data Source=/C:/Users/stijn/source/repos/game_on_trivia_group_10/blenderbenderquiz/blenderbenderquiz/basis.db");
-
-        }
-
-        public DataTable selectQuery(string query)
-        {
-              SQLiteDataAdapter ad;
-              DataTable dt = new DataTable();
-
-              try
-              {
-                    SQLiteCommand cmd;
-                    sqlite.Open();  
-                    cmd = sqlite.CreateCommand();
-                    cmd.CommandText = query;  
-                    ad = new SQLiteDataAdapter(cmd);
-                    ad.Fill(dt);
-              }
-              catch(SQLiteException ex)
-              {
-                   
-              }
-              sqlite.Close();
-              return dt;
-  }
-}
 namespace blenderbenderquiz
 {
     public partial class BlenderBenderQuizz : Form
     {
+        private int _ticks;
+        public int _count;
+        public string correct;
+        private MySqlLite.DataClass dataClass;
 
         public BlenderBenderQuizz()
         {
             new Settings();
             InitializeComponent();
+
+            this._count = 1;
+            this.correct = "A";
+            this.dataClass = new MySqlLite.DataClass();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            DataTable result = this.dataClass.selectQuery("select * from ans");
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -70,7 +45,7 @@ namespace blenderbenderquiz
         
 
 
-        private int _ticks;
+
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -89,7 +64,7 @@ namespace blenderbenderquiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (C = correct)
+            if (btnC.Text == correct)
             {
                 _count++;
             }
@@ -97,7 +72,7 @@ namespace blenderbenderquiz
 
         private void A_Click(object sender, EventArgs e)
         {
-            if (A = correct)
+            if (btnA.Text == correct)
             {
                 _count++;
             }
@@ -105,7 +80,7 @@ namespace blenderbenderquiz
 
         private void B_Click(object sender, EventArgs e)
         {
-            if (B = correct)
+            if (btnB.Text == correct)
             {
                 _count++;
             }
@@ -116,4 +91,41 @@ namespace blenderbenderquiz
 
         }
     }
+}
+
+namespace MySqlLite
+{
+    class DataClass
+    {
+        private SQLiteConnection sqlite;
+
+        public DataClass()
+        {
+            sqlite = new SQLiteConnection("Data Source=C/Users/stijn/source/repos/game_on_trivia_group_10/blenderbenderquiz/blenderbenderquiz/basis.db");
+
+        }
+
+        public DataTable selectQuery(string query)
+        {
+            SQLiteDataAdapter ad;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                SQLiteCommand cmd;
+                sqlite.Open();
+                cmd = sqlite.CreateCommand();
+                cmd.CommandText = query;
+                ad = new SQLiteDataAdapter(cmd);
+                ad.Fill(dt);
+            }
+            catch (SQLiteException ex)
+            {
+
+            }
+            sqlite.Close();
+            return dt;
+        }
+    }
+
 }

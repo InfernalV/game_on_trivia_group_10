@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.A = new System.Windows.Forms.Button();
-            this.B = new System.Windows.Forms.Button();
-            this.C = new System.Windows.Forms.Button();
+            this.btnA = new System.Windows.Forms.Button();
+            this.btnB = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,41 +61,41 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // A
+            // btnA
             // 
-            this.A.BackColor = System.Drawing.Color.OrangeRed;
-            this.A.ForeColor = System.Drawing.SystemColors.Info;
-            this.A.Location = new System.Drawing.Point(100, 408);
-            this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(76, 76);
-            this.A.TabIndex = 2;
-            this.A.Text = "A";
-            this.A.UseVisualStyleBackColor = false;
-            this.A.Click += new System.EventHandler(this.A_Click);
+            this.btnA.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnA.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnA.Location = new System.Drawing.Point(100, 408);
+            this.btnA.Name = "btnA";
+            this.btnA.Size = new System.Drawing.Size(76, 76);
+            this.btnA.TabIndex = 2;
+            this.btnA.Text = "A";
+            this.btnA.UseVisualStyleBackColor = false;
+            this.btnA.Click += new System.EventHandler(this.A_Click);
             // 
-            // B
+            // btnB
             // 
-            this.B.BackColor = System.Drawing.Color.OrangeRed;
-            this.B.ForeColor = System.Drawing.SystemColors.Info;
-            this.B.Location = new System.Drawing.Point(377, 408);
-            this.B.Name = "B";
-            this.B.Size = new System.Drawing.Size(76, 76);
-            this.B.TabIndex = 3;
-            this.B.Text = "B";
-            this.B.UseVisualStyleBackColor = false;
-            this.B.Click += new System.EventHandler(this.B_Click);
+            this.btnB.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnB.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnB.Location = new System.Drawing.Point(377, 408);
+            this.btnB.Name = "btnB";
+            this.btnB.Size = new System.Drawing.Size(76, 76);
+            this.btnB.TabIndex = 3;
+            this.btnB.Text = "B";
+            this.btnB.UseVisualStyleBackColor = false;
+            this.btnB.Click += new System.EventHandler(this.B_Click);
             // 
-            // C
+            // btnC
             // 
-            this.C.BackColor = System.Drawing.Color.OrangeRed;
-            this.C.ForeColor = System.Drawing.SystemColors.Info;
-            this.C.Location = new System.Drawing.Point(650, 408);
-            this.C.Name = "C";
-            this.C.Size = new System.Drawing.Size(76, 76);
-            this.C.TabIndex = 4;
-            this.C.Text = "C";
-            this.C.UseVisualStyleBackColor = false;
-            this.C.Click += new System.EventHandler(this.button2_Click);
+            this.btnC.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnC.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnC.Location = new System.Drawing.Point(650, 408);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(76, 76);
+            this.btnC.TabIndex = 4;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -192,9 +192,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.C);
-            this.Controls.Add(this.B);
-            this.Controls.Add(this.A);
+            this.Controls.Add(this.btnC);
+            this.Controls.Add(this.btnB);
+            this.Controls.Add(this.btnA);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Boarder1);
             this.Controls.Add(this.label6);
@@ -212,9 +212,9 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button A;
-        private System.Windows.Forms.Button B;
-        private System.Windows.Forms.Button C;
+        private System.Windows.Forms.Button btnA;
+        private System.Windows.Forms.Button btnB;
+        private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
